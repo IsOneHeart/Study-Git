@@ -1,0 +1,117 @@
+ArkTS（Ark TypeScript）是鸿蒙系统（HarmonyOS）的声明式UI开发框架的一部分，它围绕TypeScript（TS）生态进行了扩展，继承了TS的所有特性，并添加了一些特定的语法和装饰器来支持UI开发。
+
+1. 变量声明
+ArkTS中变量声明与TypeScript类似，支持多种数据类型，包括字符串、数字、布尔值、任意类型、联合类型等。
+
+// 字符串  
+let msg: string = 'hello world';  
+console.log(msg);  
+  
+// 数字  
+let age: number = 6;  
+console.log(age);  
+  
+// 布尔值  
+let finished: boolean = true;  
+console.log(finished);  
+  
+// 任意类型  
+let anyVal: any = 'zhangsan';  
+anyVal = 20;  
+console.log(anyVal);  
+  
+// 联合类型  
+let uVal: string | number | boolean = true;  
+uVal = 'lisi';  
+uVal = 123;  
+console.log(uVal);
+
+2. 装饰器（Decorators）
+ArkTS使用装饰器来赋予类、结构、方法以及变量特殊的含义。常见的装饰器包括@Entry、@Component、@State等。
+
+@Entry：用于定义首页或页面的默认入口组件。
+@Component：用于定义组件，使其具备组件化能力。
+@State：用于定义组件内部的状态变量，当状态变量改变时，会自动触发UI刷新。
+
+@Entry  
+@Component  
+struct HomePage {  
+  @State message: string = 'Welcome to ArkTS!';  
+  
+  build() {  
+    Column() {  
+      Text(this.message)  
+        .fontSize(20)  
+        .onClick(() => {  
+          this.message = 'Hello, ArkTS!';  
+        });  
+    }  
+  }  
+}
+
+3. UI描述
+ArkTS以声明式的方式描述UI结构，通过build方法中的代码块来实现。在build方法中，可以组合使用系统组件（如Column、Text、Button等）和自定义组件来构建UI界面。
+
+@Component  
+struct MyComponent {  
+  build() {  
+    Column() {  
+      Text('Hello, ArkTS!')  
+        .fontSize(24);  
+      Button('Click me')  
+        .onClick(() => {  
+          console.log('Button clicked!');  
+        });  
+    }  
+  }  
+}
+
+4. 属性方法
+组件的属性可以通过链式调用的方式配置，如设置字体大小、颜色、宽度、高度等。
+
+Text('Hello, ArkTS!')  
+  .fontSize(24)  
+  .fontColor(Color.Red);
+
+5. 事件方法
+组件的事件可以通过链式调用设置响应逻辑，如按钮的点击事件。事件处理方法可以是箭头函数、匿名函数或组件的成员函数。
+
+Button('Click me')  
+  .onClick(() => {  
+    console.log('Button clicked!');  
+  });
+
+6. 自定义组件
+开发者可以将多个基础组件或容器组件结合，抽象成一个自定义组件，以便在其他页面或组件中更灵活地复用。
+
+@Component  
+struct CustomComponent {  
+  @State count: number = 0;  
+  
+  build() {  
+    Row() {  
+      Text(`Count: ${this.count}`)  
+        .fontSize(20);  
+      Button('+')  
+        .onClick(() => {  
+          this.count++;  
+        });  
+    }  
+  }  
+}
+
+7. 生命周期回调
+自定义组件具有生命周期回调，如aboutToAppear、aboutToDisappear等，这些回调在组件的不同生命周期阶段被触发，允许开发者在这些阶段执行特定的逻辑。
+
+@Component  
+struct MyComponent {  
+  aboutToAppear() {  
+    console.log('Component is about to appear');  
+  }  
+  
+  aboutToDisappear() {  
+    console.log('Component is about to disappear');  
+  }  
+  
+  // ...  
+}
