@@ -1,0 +1,4 @@
+Zhang_Hai Math_Dept  F 1.86 19730826 19970915    
+Wang_Jun  Math_Dept  F 1.81 19650921 19960131    
+Yi_Xin    Comp_Dept  M 1.70 20041211 20230901    
+Shao_Ai   Elic_Dept  F 1.65 20051227 20230901    
