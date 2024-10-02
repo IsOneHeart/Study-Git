@@ -1,8 +1,0 @@
-{
-  "src": [
-    "pages/home_page/Index",
-    "pages/components_page/Components_Index",
-    "pages/random_sys/page_random",
-    "pages/random_sys/page_uuid"
-  ]
-}
