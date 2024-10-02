@@ -1,0 +1,4 @@
+﻿  test29_MinFrontMaxBehind.cpp
+C:\Users\21290\Documents\Tencent Files\3030461274\FileRecv\MobileFile\C语言\C语言\实验4：构造类型程序设计\test29_MinFrontMaxBehind\test29_MinFrontMaxBehind.cpp(3,13): warning C4326: “main”的返回类型应为“int”而非“void”
+C:\Users\21290\Documents\Tencent Files\3030461274\FileRecv\MobileFile\C语言\C语言\实验4：构造类型程序设计\test29_MinFrontMaxBehind\test29_MinFrontMaxBehind.cpp(29,9): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  test29_MinFrontMaxBehind.vcxproj -> C:\Users\21290\Documents\Tencent Files\3030461274\FileRecv\MobileFile\C语言\C语言\实验4：构造类型程序设计\test29_MinFrontMaxBehind\x64\Debug\test29_MinFrontMaxBehind.exe
