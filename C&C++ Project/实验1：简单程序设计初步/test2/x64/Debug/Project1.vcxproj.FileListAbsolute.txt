@@ -1,2 +1,0 @@
-C:\Users\21290\Documents\Tencent Files\3030461274\FileRecv\MobileFile\C语言\C语言\Project1\x64\Debug\Project1.exe
-C:\Users\21290\Documents\Tencent Files\3030461274\FileRecv\MobileFile\C语言\C语言\Project1B\x64\Debug\Project1B.exe
