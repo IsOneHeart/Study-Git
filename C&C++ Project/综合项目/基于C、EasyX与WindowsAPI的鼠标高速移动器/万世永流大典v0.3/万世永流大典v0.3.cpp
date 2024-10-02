@@ -9,7 +9,7 @@ void image_modifier(int*);
 void word_monitor();
 
 void rotator(int* tick) {
-	printf("本程序基于C/C++开发，用于快速选择屏幕。\n");
+	printf("本程序基于C/C++开发，用于快速旋转屏幕。\n");
 	printf("本程序使用了《原神》表情包及二创图片，完全开源。\n");
 	printf("关闭本控制台窗口即可彻底关闭本程序。\n请确保以管理员身份运行，按上键开转...\n");
 	int keyDown = 0;
