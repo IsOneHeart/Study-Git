@@ -1,0 +1,4 @@
+"E:\Installation Position New\CLion2024\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/Installation Position New/CLion2024/CLion 2024.1.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S E:\StudyE\C&C++\数据结构实验4：排序与查找\BinarySortTree -B E:\StudyE\C&C++\数据结构实验4：排序与查找\BinarySortTree\cmake-build-debug
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: E:/StudyE/C&C++/数据结构实验4：排序与查找/BinarySortTree/cmake-build-debug
