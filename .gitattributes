@@ -1,4 +1,4 @@
-*.js linguist-language=Javascript
-*.ts linguist-language=Typescript
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
 *.ets linguist-language=ArkTS
 *.cmake linguist-language=C
