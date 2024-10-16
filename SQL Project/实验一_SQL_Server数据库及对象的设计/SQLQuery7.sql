@@ -1,0 +1,2 @@
+CREATE NONCLUSTERED INDEX MajorIdx  
+ON Major (MajorNo);

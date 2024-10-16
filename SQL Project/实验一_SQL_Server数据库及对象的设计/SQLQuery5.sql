@@ -1,0 +1,2 @@
+DELETE FROM Student
+	WHERE sno='023414320238'
